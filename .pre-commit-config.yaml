@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.4
+    hooks:
+      - id: ruff-check
+        args:
+          - --fix
+      - id: ruff-format
+  - repo: local  # FUTURE: use official hook
+    hooks:
+      - id: ty-check
+        name: ty-check
+        language: python
+        entry: ty check
+        pass_filenames: false
+        args:
+          - --python=.venv/
+        additional_dependencies: [ty]
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1
+    hooks:
+      - id: nbstripout
+        files: .
