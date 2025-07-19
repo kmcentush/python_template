@@ -10,7 +10,8 @@ Last updated: 2025-07-19
       - Package name `name = "python_template"` -> `name = "<new_name>"`
       - Package version `version = {attr = "python_template.__version__"}` -> `version = {attr = "<new_name>.__version__"}`
    - In this file, `src/python_template/__init__.py` -> `src/<new_name>/__init__.py` in the `Version Bumping` section below.
-3. In `pyproject.toml`, update the package metadata: description, authors, etc.
+3. Update the package metadata: description, authors, etc. in `pyproject.toml`.
+4. Delete this section of the `README.md` now that you're done!
 
 ## Installation
 1. Install [uv](https://github.com/astral-sh/uv) for your system.
