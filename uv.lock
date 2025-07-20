@@ -272,6 +272,7 @@ source = { virtual = "." }
 dev = [
     { name = "nbstripout" },
     { name = "pre-commit" },
+    { name = "pytest" },
     { name = "pytest-cov" },
     { name = "ruff" },
     { name = "ty" },
@@ -283,6 +284,7 @@ dev = [
 dev = [
     { name = "nbstripout" },
     { name = "pre-commit" },
+    { name = "pytest" },
     { name = "pytest-cov" },
     { name = "ruff" },
     { name = "ty" },

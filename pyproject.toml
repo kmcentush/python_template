@@ -13,6 +13,7 @@ dependencies = []
 dev = [
     "nbstripout",
     "pre-commit",
+    "pytest",
     "pytest-cov",
     "ruff",
     "ty",
